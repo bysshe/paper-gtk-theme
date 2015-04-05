@@ -12,23 +12,22 @@
 # published by the Open Source Initiative.
 #
 
+Name:           paper-gtk-theme
+Version:        0.1
+Release:        2%{?dist}
 
-Name:		paper-gtk-theme
-Version:	1.0
-Release:	0
+Summary:        Paper GTK Theme
+License:        GPL-3.0+
 
-Summary:	Paper GTK Theme
-License:    GPL-3.0+
+Group:  User Interface/Desktops
+Url:    http://snwh.org/paper/ 
+Source: %{name}-%{version}.tar.gz
 
-Group:      System/GUI/GNOME
-Url:        http://www.mokaproject.com/paper-gtk-theme
-Source0:	%{name}-%{version}.tar.gz
-
-BuildArch:	noarch
+BuildArch:      noarch
 
 
 %description
-Paper GTK3 Theme
+Paper GTK3 Theme, based upon Google's Material design from Android.
 
 %prep
 %setup -q
@@ -38,8 +37,13 @@ Paper GTK3 Theme
 %install
 install -dpm 0755 $RPM_BUILD_ROOT%{_datadir}/themes/
 cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
-cp -a Paper-Dark/ $RPM_BUILD_ROOT%{_datadir}/themes/
 
 %files
 %doc AUTHORS LICENSE
 %{_datadir}/themes/Paper/
+
+%changelog
+* Sun Apr 05 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-2
+- new package built with tito
+titofied for fedora copr
+
