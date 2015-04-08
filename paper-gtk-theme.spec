@@ -14,7 +14,7 @@
 
 Name:           paper-gtk-theme
 Version:        0.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 
 Summary:        Paper GTK Theme
 License:        GPL-3.0+
@@ -43,6 +43,18 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
+* Tue Apr 07 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-3
+- Updated terminal styles (hewittsamuel@gmail.com)
+- Updated window theme (hewittsamuel@gmail.com)
+- Updated unity.css (hewittsamuel@gmail.com)
+- Updated switch assets (hewittsamuel@gmail.com)
+- added terminal specific styles (hewittsamuel@gmail.com)
+- New wm assets & unity-specific stylings (hewittsamuel@gmail.com)
+- Tweaked wm assets (hewittsamuel@gmail.com)
+- Tweaked a few things (hewittsamuel@gmail.com)
+- Fixed gedit sidebar issue (chais.z3r0@gmail.com)
+- Update tito config (liam@fightingcrane.com)
+
 * Sun Apr 05 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-2
 - new package built with tito
 titofied for fedora copr
