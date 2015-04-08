@@ -20,8 +20,12 @@
  * Unity Colors *
  ****************/
 
-@define-color unity @header;
-@define-color backdrop_unity @backdrop_header;
+@define-color unity #636E73; /* Unity window border color */
+@define-color backdrop_unity #454D50; /* Backdrop Unity window border color */
+@define-color unity_text #dbdee0; /* Unity window text color */
+@define-color backdrop_unity_text #909598; /* Backdrop Unity window text color */
+@define-color unity_panel #454D50; /* Unity panel color */
+@define-color unity_panel_text #dbdee0;  /* Unity panel text color */
 
 /*********************
  * Unity Decorations *
@@ -49,32 +53,34 @@ UnityDecoration {
     -UnityDecoration-title-indent: 10px;/* Size property, left indent of the title */
     -UnityDecoration-title-fade: 35px;/* Size property, space of the title that can be faded */
     -UnityDecoration-title-alignment: 0.0;/* Float from 0.0 to 1.0, to align the title */
+    background-color: @unity;
+    color: @unity_text;
 }
 
 UnityDecoration.top {
-    padding: 0 8px 0 8px;
-    border-radius: 0px;
+    padding: 0 5px 0 5px;
+    border-radius: 7px 7px 0px 0px;
     box-shadow: none;
     border: 1px solid @unity;
     border-bottom-width: 0;
     background-color: @unity;
-    color: @header_text;
+    color: @unity_text;
 }
 
 UnityDecoration.top.menuitem {
-    color: @header_text;
+    color: @unity_text;
 }
 
 UnityDecoration.top.menuitem:backdrop {
     background-color: @backdrop_unity;
-    color: @backdrop_header_text;
+    color: @backdrop_unity_text;
 }
 
 UnityDecoration.top:backdrop {
     border: 1px solid @backdrop_unity;
     border-bottom-width: 0;
     background-color: @backdrop_unity;
-    color: @backdrop_header_text;
+    color: @backdrop_unity_text;
 }
 
 UnityDecoration.left,
@@ -82,7 +88,7 @@ UnityDecoration.right,
 UnityDecoration.bottom {
     background-size: 1px;
     background-repeat: repeat-x;
-    background-color: @unity
+    background-color: @unity;
 }
 
 UnityDecoration.left:backdrop,
@@ -100,25 +106,25 @@ UnityDecoration.bottom:backdrop {
 
 UnityPanelWidget,
 .unity-panel {
-	background-color: @panel;
-	color: @panel_text;
+	background-color: @unity_panel;
+	color: @unity_panel_text;
 }
 
 .unity-panel.menuitem,
 .unity-panel .menuitem {
     border-width: 0 1px;
-    color: @panel_text;
+    color: @unity_panel_text;
 }
 
 .unity-panel.menubar,
 .unity-panel .menubar {
-    color: @panel_text;
+    color: @unity_panel_text;
 }
 
 .unity-panel.menu.menubar,
 .unity-panel .menu .menubar {
-    background-color: @panel;
-    color: @panel_text;
+    background-color: @unity_panel;
+    color: @unity_panel_text;
 }
 
 .unity-panel.menubar:backdrop,
@@ -133,15 +139,15 @@ UnityPanelWidget,
     border-style: solid;
     border: none;
     background: none;
-    color: @panel_text;
+    color: @unity_panel_text;
     box-shadow: none;
 }
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem:hover {
-    border-radius: 0px;
-    background-color: shade(@unity, 0.8);
-    color: @panel_text;
+    border-radius: 0;
+    background-color: shade(@unity, 1.05);
+    color: @unity_panel_text;
     box-shadow: none;
 }
 
