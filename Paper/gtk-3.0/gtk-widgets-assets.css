@@ -328,24 +328,28 @@ GtkSwitch.slider:insensitive {
     background: url("assets/scalable/pane-separator-grip.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 2px 22px;
 }
 
 .pane-separator:hover {
     background: url("assets/scalable/pane-separator-grip-prelight.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 2px 22px;
 }
 
 .pane-separator.vertical {
     background: url("assets/scalable/pane-separator-grip-vertical.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 2px 22px;
 }
 
 .pane-separator.vertical:hover {
     background: url("assets/scalable/pane-separator-grip-vertical-prelight.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 2px 22px;
 }
 
 /*********************
@@ -579,6 +583,52 @@ GtkSwitch.slider:insensitive {
     background-image: url("assets/scalable/spinner-01.svg");
     animation: spinner 600ms infinite linear;
 }
+
+/*****************
+ * Seletion Mode *
+ *****************/
+
+/* View Content Check */
+.view.content-view.check {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-unchecked.png"), url("assets/selection-mode-checkbox-unchecked@2.png"));
+    background: none;
+}
+
+.view.content-view.check:hover {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-unchecked-hover.png"), url("assets/selection-mode-checkbox-unchecked-hover@2.png"));
+    background: none;
+}
+
+.view.content-view.check:active {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-unchecked-active.png"), url("assets/selection-mode-checkbox-unchecked-active@2.png"));
+    background: none;
+}
+
+.view.content-view.check:backdrop {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-unchecked-backdrop.png"), url("assets/selection-mode-checkbox-unchecked-backdrop@2.png"));
+    background: none;
+}
+
+.view.content-view.check:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-checked.png"), url("assets/selection-mode-checkbox-checked@2.png"));
+    background: none;
+}
+
+.view.content-view.check:checked:hover {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-checked-hover.png"), url("assets/selection-mode-checkbox-checked-hover@2.png"));
+    background: none;
+}
+
+.view.content-view.check:checked:active {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-checked-active.png"), url("assets/selection-mode-checkbox-checked-active@2.png"));
+    background: none;
+}
+
+.view.content-view.check:backdrop:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/selection-mode-checkbox-checked-backdrop.png"), url("assets/selection-mode-checkbox-checked-backdrop@2.png"));
+    background: none;
+}
+
 
 /*************************
  * Check and Radio items *
