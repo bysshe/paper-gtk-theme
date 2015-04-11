@@ -14,7 +14,7 @@
 
 Name:           paper-gtk-theme
 Version:        0.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 
 Summary:        Paper GTK Theme
 License:        GPL-3.0+
@@ -43,6 +43,21 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
+* Sat Apr 11 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-4
+- Merge branch 'master' of https://github.com/snwh/paper-gtk-theme
+  (liam@fightingcrane.com)
+- Refinement (hewittsamuel@gmail.com)
+- Refinement (hewittsamuel@gmail.com)
+- Fixed selection mode assets (hewittsamuel@gmail.com)
+- Refinements (hewittsamuel@gmail.com)
+- Added unity assets (hewittsamuel@gmail.com)
+- Tweaks & cleanup (hewittsamuel@gmail.com)
+- Updated unity.css (hewittsamuel@gmail.com)
+- Some refinements. (hewittsamuel@gmail.com)
+- A few tweaks (hewittsamuel@gmail.com)
+- fixed error (hewittsamuel@gmail.com)
+- Updated terminal css (hewittsamuel@gmail.com)
+
 * Tue Apr 07 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-3
 - Updated terminal styles (hewittsamuel@gmail.com)
 - Updated window theme (hewittsamuel@gmail.com)
