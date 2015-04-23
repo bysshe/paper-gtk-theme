@@ -14,7 +14,7 @@
 
 Name:           paper-gtk-theme
 Version:        0.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 
 Summary:        Paper GTK Theme
 License:        GPL-3.0+
@@ -43,6 +43,12 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
+* Thu Apr 23 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-6
+- Merge branch 'master' of https://github.com/snwh/paper-gtk-theme
+  (liam@fightingcrane.com)
+- New switches, bug fixes. (hewittsamuel@gmail.com)
+- Refinement + dark theme updates. (hewittsamuel@gmail.com)
+
 * Sun Apr 12 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-5
 - Merge branch 'master' of https://github.com/snwh/paper-gtk-theme
   (liam@fightingcrane.com)
