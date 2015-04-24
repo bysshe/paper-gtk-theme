@@ -27,13 +27,12 @@
     background-color: @header;
     color: @header_text;
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1),
-                inset 0 -1px 0 0 rgba(0,0,0,0.1),
-                inset 0 -3px 3px -4px alpha(#000, 0.4);
+                inset 0 -1px 2px 0 rgba(0,0,0,0.1);
 }
 
 .maximized .titlebar {
     border-radius: 0px;
-    /*box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);*/
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
     box-shadow: none;
 }
 
@@ -60,7 +59,7 @@
     padding-left: 13px;
     padding-right: 13px;
     color: @header_text;
-    font: Bold 10;
+    font: Bold;
 }
 
 /* Subtitle */
@@ -96,7 +95,7 @@
     background-color: transparent;
     background-image: none;
     border: none;
-    padding: 12px 15px;
+    padding: 12px 15px 10px 15px;
 }
 
 /* Normal Button */
@@ -134,7 +133,7 @@
 }
 
 .titlebar .text-button:active {
-    font: Bold 10;
+    font: Bold;
 }
 
 /* Checked Button */
@@ -155,7 +154,7 @@
 }
 
 .titlebar .text-button:checked {
-    font: Bold 10;
+    font: Bold;
 }
 
 /* Focus Button */
@@ -246,8 +245,9 @@
     box-shadow: inset 0 -2px 0 0 @backdrop_header_text;
 }
 
+
 .titlebar .text-button:active:backdrop {
-    font: Bold 10;
+    font: Bold;
 }
 
 /* Backdrop:Hover; Button */
