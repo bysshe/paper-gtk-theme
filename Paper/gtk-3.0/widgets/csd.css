@@ -16,28 +16,10 @@
 * with the Paper GTK theme. If not, see http://www.gnu.org/licenses/.
 */
 
-@define-color disks #8561C5;
+/*******
+ * CSD *
+ *******/
 
-/**********
- * Header *
- **********/
-
-GduWindow,
-GduWindow * {
-	color: #555555;
-}
-
-GduWindow .titlebar,
-GduWindow .header-bar {
-    background-color: @disks;
-}
-
-GduWindow .titlebar:backdrop,
-GduWindow .header-bar:backdrop {
-    background-color: shade(@disks,0.9);
-}
-
-GduWindow GtkToolbar,
-GduWindow .toolbar {
-    background-color: @disks;
+.csd.background {
+    border-radius: 0 0 4px 4px;
 }

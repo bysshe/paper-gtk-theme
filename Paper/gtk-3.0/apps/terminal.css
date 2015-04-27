@@ -30,32 +30,12 @@
 
 TerminalWindow .titlebar,
 TerminalWindow .header-bar {
-    background-color: @terminal;
+    background-color: @terminal_window;
 }
 
 TerminalWindow .titlebar:backdrop,
 TerminalWindow .header-bar:backdrop{
-    background-color: shade(@terminal,0.9);
-}
-
-
-/* Switch */
-TerminalWindow .header-bar GtkSwitch.trough:active {
-    background-color: @terminal;
-}
-
-TerminalWindow GtkSwitch.trough:active {
-    border: 1px solid shade(@terminal, 0.8);
-    background-color: @terminal;
-}
-
-TerminalWindow GtkSwitch.slider:active {
-    border: 1px solid shade(@terminal, 0.8);
-} 
-
-TerminalWindow .header-bar GtkSwitch.slider:active:backdrop,
-TerminalWindow .header-bar GtkSwitch.slider:backdrop {
-    background-color: shade(@terminal, 0.9);
+    background-color: shade(@terminal_window,0.9);
 }
 
 /************
@@ -71,44 +51,45 @@ TerminalNotebook tab.top:active,
 TerminalWindow .notebook tab.top:active,
 TerminalWindow .dynamic-notebook tab.top:active {
     box-shadow:inset 0 -3px 0 0 @terminal;
+    text-shadow:none;
 }
 
 /* Normal */
 TerminalWindow .notebook tab.top {
     box-shadow:inset 0 -1px 0 0 @terminal_window;
+    text-shadow:none;
 }
 
 /*----- Tabs -----*/
 
 TerminalWindow .notebook tab {
-    /*border: none;*/
-    border-radius: 0;
     background: @terminal_window;
     color: @terminal_window_text;
+    text-shadow:none;
 }
 
 TerminalWindow .notebook tab:active {
-    border: none;
     background: @terminal_window;
     color: @terminal_window_text;
+    text-shadow:none;
 }
 
 TerminalWindow .notebook tab:hover {
     background-color: shade(@terminal_window, 1.05);
     color: alpha(#fff, 0.3);
-    transition: all 300ms cubic-bezier(0.3, 0.5, 0.5, 0.9);
+    text-shadow:none;
 }
 
 TerminalWindow .notebook tab:backdrop {
-    border: none;
     background: @backdrop_header;
     color: @backdrop_terminal_window_text;
+    text-shadow:none;
 }
 
 TerminalWindow .notebook tab:insensitive {
-    border: none;
     background: @insensitive_header;
     color: @insensitive_terminal_window_text;
+    text-shadow:none;
 }
 
 /* Labels */
@@ -134,26 +115,19 @@ TerminalWindow .notebook:insensitive:backdrop GtkLabel {
 }
 
 TerminalWindow .notebook tab GtkLabel {
-    background: none;
     color: @backdrop_terminal_window_text;
 }
 
 TerminalWindow .notebook tab:active GtkLabel,
 TerminalWindow .notebook .active-page,
 TerminalWindow .notebook tab .active-page GtkLabel {
-    background: none;
     color: @terminal_window_text;
-    font-weight: bold;
-    text-shadow: none;
 }
 
 TerminalWindow .notebook tab:backdrop GtkLabel,
 TerminalWindow .notebook tab GtkLabel:backdrop {
-    background: none;
     color: @backdrop_terminal_window_text;
 }
-
-
 
 TerminalWindow .notebook tab .button GtkImage {
     color: @terminal_window_text;
@@ -174,7 +148,6 @@ TerminalWindow .notebook tab .button:backdrop GtkImage {
 
 TerminalScreen,
 VteTerminal {
-    /*-TerminalScreen-background-darkness: 0.95;*/
     background-color: @terminal_background;
     color: @terminal_text;
 }
@@ -182,7 +155,6 @@ VteTerminal {
 /*************
  * Scrollbar *
  *************/
-
 
 TerminalWindow .scrollbar {
     background-image: none;
