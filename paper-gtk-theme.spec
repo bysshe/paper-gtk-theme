@@ -14,7 +14,7 @@
 
 Name:           paper-gtk-theme
 Version:        0.1
-Release:        15%{?dist}
+Release:        16%{?dist}
 
 Summary:        Paper GTK Theme
 License:        GPL-3.0+
@@ -43,6 +43,9 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
+* Mon Jun 15 2015 liam bulkley <liam@fightingcrane.com> 0.1-16
+- 
+
 * Sun Jun 14 2015 liam bulkley <liam@fightingcrane.com> 0.1-15
 - 
 
