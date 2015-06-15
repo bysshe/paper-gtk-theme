@@ -14,7 +14,7 @@
 
 Name:           paper-gtk-theme
 Version:        0.1
-Release:        13%{?dist}
+Release:        14%{?dist}
 
 Summary:        Paper GTK Theme
 License:        GPL-3.0+
@@ -43,6 +43,15 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
+* Sun Jun 14 2015 liam bulkley <liam@fightingcrane.com> 0.1-14
+- Merge branch 'master' of https://github.com/snwh/paper-gtk-theme
+  (liam@fightingcrane.com)
+- Merge pull request #167 from superscript18/patch-1 (hewittsamuel@gmail.com)
+- Stuff (hewittsamuel@gmail.com)
+- Oops, typo last time.  Color's right now. (superscript18@gmail.com)
+- New color per @snwh's request (superscript18@gmail.com)
+- Gives Geary a sweet yellow titlebar! (superscript18@gmail.com)
+
 * Tue May 26 2015 Liam Bulkley <liam@fightingcrane.com> 0.1-13
 - 
 
